@@ -2,7 +2,7 @@ const express = require('express')
 const marvel = require('./api_marvel.js')
 const router = express.Router()
 const MD5 = require('md5')
-const concat = require('concat')
+
 
 router.get("/characters/?:name", async(req, res) => {
     //config para acessar a API
@@ -29,7 +29,7 @@ router.get("/characters/?:name", async(req, res) => {
         console.log('')
 
         for (var pos = 0; pos < titulos.length; pos++) { //aqui ele faz um for e verifica o tamanho do array e retorna o tamanho do array com os dados processados
-            console.log(titulos[pos].name);
+            console.log("Os Titulos são: ", titulos[pos].name);
 
         }
         return res.send(extend)
