@@ -6,8 +6,8 @@ const MD5 = require('md5')
 router.get("/characters/?:name", async(req, res) => {
     //config para acessar a API
 
-    const privateKey = "eef1313568b487b509c1ebafce47ed8560aa435b"
-    const publicKey = "271cd922471ff6d5a9086c784f28fe36"
+    const privateKey = ""
+    const publicKey = ""
     const { name } = req.params
     const ts = Date.now()
     const hash = MD5(ts + privateKey + publicKey)
