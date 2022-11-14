@@ -4,7 +4,6 @@ const router = express.Router()
 const MD5 = require('md5')
 
 router.get("/characters/?:name", async(req, res) => {
-    //config para acessar a API
 
     const privateKey = ""
     const publicKey = ""
